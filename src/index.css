@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #ffffff;
+    color: #0f172a;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.font-display { font-family: 'Oswald', sans-serif; letter-spacing: 0.02em; }
+
+/* Brand colors */
+:root {
+  --brand-blue: #0B4A7F;
+  --brand-blue-2: #1E88E5;
+  --brand-green: #4CAF50;
+  --brand-green-2: #8BC34A;
+  --ink: #0f172a;
+  --mute: #64748b;
+}
+
+.text-brand-blue { color: var(--brand-blue); }
+.text-brand-green { color: var(--brand-green); }
+.bg-brand-blue { background-color: var(--brand-blue); }
+.bg-brand-green { background-color: var(--brand-green); }
+
+/* soft eco hero gradient */
+.hero-veil {
+  background: linear-gradient(120deg, rgba(11,74,127,0.88) 0%, rgba(30,136,229,0.72) 45%, rgba(76,175,80,0.55) 100%);
+}
+
+.section-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 14px; border-radius: 999px;
+  background: rgba(76,175,80,0.10); color: var(--brand-green);
+  font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+}
+
+.brand-gradient-text {
+  background: linear-gradient(90deg, #0B4A7F 0%, #1E88E5 55%, #4CAF50 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #0B4A7F; color: #fff; padding: 12px 22px;
+  border-radius: 6px; font-weight: 600; font-size: 14px;
+  transition: background-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+  box-shadow: 0 6px 18px rgba(11,74,127,0.18);
+}
+.btn-primary:hover { background: #08385f; transform: translateY(-1px); }
+
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 1.5px solid rgba(255,255,255,0.7); color: #fff;
+  padding: 12px 22px; border-radius: 6px; font-weight: 600; font-size: 14px;
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+}
+.btn-outline:hover { background: #fff; color: #0B4A7F; border-color: #fff; }
+
+.btn-green {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #4CAF50; color: #fff; padding: 12px 22px;
+  border-radius: 6px; font-weight: 600; font-size: 14px;
+  transition: background-color 200ms ease, transform 200ms ease;
+}
+.btn-green:hover { background: #3d9140; transform: translateY(-1px); }
+
+.card-hover {
+  transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(11,74,127,0.12);
+}
+
+/* Marquee for partners */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track { animation: marquee 28s linear infinite; }
+
+/* Water-drop gentle pulse */
+@keyframes gentlePulse {
+  0%, 100% { transform: translateY(0); opacity: 0.9; }
+  50% { transform: translateY(-6px); opacity: 1; }
+}
+.gentle-pulse { animation: gentlePulse 3.8s ease-in-out infinite; }
+
+/* container */
+.container-x { max-width: 1240px; margin-left: auto; margin-right: auto; padding-left: 20px; padding-right: 20px; }
+
+@layer base {
+  :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+        --primary: 0 0% 9%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 96.1%;
+        --secondary-foreground: 0 0% 9%;
+        --muted: 0 0% 96.1%;
+        --muted-foreground: 0 0% 45.1%;
+        --accent: 0 0% 96.1%;
+        --accent-foreground: 0 0% 9%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 89.8%;
+        --input: 0 0% 89.8%;
+        --ring: 0 0% 3.9%;
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground; }
+}
