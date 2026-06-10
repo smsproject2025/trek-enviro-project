@@ -2,6 +2,7 @@ import { useState } from "react";
 import PageHero from "../components/PageHero";
 import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from "lucide-react";
 import { CONTACT_INFO, IMAGES } from "../data/mock";
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", capacity: "", facility: "", location: "", message: "" });
@@ -11,10 +12,29 @@ const Contact = () => {
 
   return (
     <main>
+
+    <Helmet>
+  <title>Contact Trek Enviro | Get STP & Wastewater Solutions</title>
+
+  <meta
+    name="description"
+    content="Contact Trek Enviro for sewage treatment plant installation, wastewater treatment consultation, site assessment, and custom STP solutions across India."
+  />
+
+  <meta
+    name="keywords"
+    content="contact Trek Enviro, STP consultation, wastewater treatment contact, sewage treatment plant quote"
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://trekenviro.in/contact" />
+</Helmet>
+
       <PageHero
         title="Let's protect water together."
         subtitle="Ready to optimize your wastewater management? Contact us for a free site assessment and custom proposal."
-        image="./images/savewater.avif"
+        image="./images/savewater.webp"
         crumbs={["Contact"]}
       />
 

@@ -1,18 +1,14 @@
 export const LOGO_URL = '/images/trek_logo.png';
 
 export const IMAGES = {
-  heroMain: '/images/hero-main3.jpeg',
-  product: '/images/product1.jpeg',
-  about: '/images/about-us1.jpeg',
-  process: '/images/Process.jpeg',
-  sectors: 'https://images.unsplash.com/photo-1533077162801-86490c593afb?w=1400&q=80',
-  sustain: 'https://images.unsplash.com/photo-1674578745937-c73f81bdda07?w=1200&q=80',
-  collage2: '/images/about-img2.jpeg',
-  service: '/images/services1.jpeg',
-  drop: 'https://images.pexels.com/photos/16668354/pexels-photo-16668354.jpeg?w=1200',
+  heroMain: '/images/hero-main3.webp',
+  product: '/images/product1.webp',
+  about: '/images/about-us1.webp',
+  process: '/images/Process.webp',
+  collage2: '/images/about-img2.webp',
+  service: '/images/services1.webp',
   cleanWater: 'https://images.unsplash.com/photo-1671461838930-f70c86753275?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  engineering: 'https://images.unsplash.com/photo-1679586928485-4cca648ed585?w=1200&q=80',
-};
+  };
 
 export const NAV_LINKS = [
   { label: 'Home', path: '/' },
@@ -77,7 +73,7 @@ export const SMART_STPS = [
 export const PRODUCT_DETAILS = [
   {
     name: 'Capsule Type STP',
-    image: "/images/capsule_image.png",
+    image: "/images/capsule_image.webp",
     // image: 'https://customer-assets.emergentagent.com/job_axisbd-build/artifacts/l31u8o26_transparent_1.png',
     tagline: 'Compact. Efficient. Sustainable.',
     intro: 'Designed for domestic wastewater treatment in residential complexes, villages, and small communities. Its prefabricated FRP structure allows for quick installation, minimal maintenance, and complete compliance with India\u2019s environmental standards.',
@@ -94,7 +90,7 @@ export const PRODUCT_DETAILS = [
   },
   {
     name: 'Cylindrical Type STP',
-    image: "/images/cylindrical_image.png",
+    image: "/images/cylindrical_image.webp",
     // image: 'https://customer-assets.emergentagent.com/job_axisbd-build/artifacts/pl5pe3qx_transparent_3.png',
     tagline: 'Powerful Performance for Large-Scale Needs.',
     intro: 'Trek Enviro\u2019s Cylindrical Type STP is engineered for efficient industrial and commercial sewage treatment across India. Built to handle high loads, ensure fast and effective treatment, and require minimal maintenance \u2014 a preferred choice for industries seeking reliability, sustainability, and compliance.',
@@ -158,31 +154,6 @@ export const TESTIMONIALS = [
   { quote: 'From design to commissioning in six weeks. The MBBR system runs on 40% less power than our old STP and effluent quality is consistently under CPCB limits.', name: 'Vikram Iyer', role: 'Project Manager, Civil Contractor' },
 ];
 
-export const PARTNERS = [
-  'Susbio', 'CPCB Compliant', 'SPCB Approved', 'ISO 9001', 'Namami Gange', 'Swachh Bharat',
-  'Make in India', 'NGT Guidelines', 'Indian Green Building', 'BIS Standards',
-];
-
-export const BLOG_POSTS = [
-  {
-    title: 'Why Packaged FRP STPs Are Replacing Traditional Septic Tanks in Urban India',
-    date: 'July 2, 2025',
-    excerpt: 'Decentralized wastewater treatment is no longer a niche solution — it is becoming the regulatory and sustainability default for growing Indian cities.',
-    image: 'https://images.unsplash.com/photo-1622322977885-8ee6d45ea016?w=800&q=80',
-  },
-  {
-    title: 'MBBR vs Activated Sludge: What Actually Matters for a 50 KLD Project',
-    date: 'June 20, 2025',
-    excerpt: 'Footprint, OPEX, sludge generation, nutrient removal — a practical side-by-side for project managers and civil contractors.',
-    image: 'https://images.unsplash.com/photo-1533163238111-4a7ced54f2e4?w=800&q=80',
-  },
-  {
-    title: 'Water Reuse in Residential Societies: From Compliance to Circular Economy',
-    date: 'June 10, 2025',
-    excerpt: 'How gated communities are cutting freshwater bills by 40%+ while exceeding CPCB norms through on-site treatment and reuse.',
-    image: 'https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=800&q=80',
-  },
-];
 
 export const CONTACT_INFO = {
   phone: '+91 96169 80885',

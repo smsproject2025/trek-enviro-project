@@ -4,10 +4,30 @@ import WhyUsSection from "../components/WhyUsSection";
 import CtaSection from "../components/CtaSection";
 import { IMAGES } from "../data/mock";
 import { Target, Eye, Leaf } from "lucide-react";
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
   return (
     <main>
+
+    <Helmet>
+  <title>About Trek Enviro | Wastewater Treatment Company India</title>
+
+  <meta
+    name="description"
+    content="Learn about Trek Enviro, a leading wastewater treatment and sewage treatment plant company delivering sustainable MBBR technology solutions across India."
+  />
+
+  <meta
+    name="keywords"
+    content="About Trek Enviro, wastewater treatment company, sewage treatment experts, MBBR STP India"
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://trekenviro.in/about" />
+</Helmet>
+
       <PageHero
         title="About Trek Enviro"
         subtitle="A leading provider of innovative and sustainable wastewater management solutions across India."

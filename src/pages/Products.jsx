@@ -6,6 +6,7 @@ import ProcessFlowAnimation from "../components/ProcessFlowAnimation";
 import ProductDetailSection from "../components/ProductDetailSection";
 import InstallationProcess from "../components/InstallationProcess";
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
 
 const specRows = [
   { capacity: "5 KLD", area: "~4 sqm", power: "0.75 kW", users: "25–30", app: "Villas, small restaurants" },
@@ -18,6 +19,25 @@ const specRows = [
 const Products = () => {
   return (
     <main>
+
+    <Helmet>
+  <title>Packaged STP Plants | Advanced MBBR Technology Products</title>
+
+  <meta
+    name="description"
+    content="Discover Trek Enviro packaged FRP sewage treatment plants with advanced MBBR technology for residential, commercial, hotel, hospital, and industrial applications."
+  />
+
+  <meta
+    name="keywords"
+    content="packaged STP, FRP sewage treatment plant, MBBR STP, sewage recycling plant, compact STP India"
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://trekenviro.in/products" />
+</Helmet>
+
       <PageHero
         title="Product & Technology"
         subtitle="ADVANCED MBBR(Anaerobic + Aerobic) — packaged FRP units based on proven decentralized wastewater treatment, adapted and manufactured for Indian conditions."

@@ -8,10 +8,31 @@ import Services from "./pages/Services";
 import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import { Toaster } from "./components/ui/sonner";
+import { Helmet } from "react-helmet-async";
 
 function App() {
   return (
     <div className="App">
+
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Trek Enviro",
+            url: "https://trekenviro.in",
+            logo: "https://trekenviro.in/images/trek_logo.png",
+            description:
+              "Manufacturer and supplier of advanced MBBR sewage treatment plants and wastewater treatment solutions across India.",
+            telephone: "+91-96169 80885",
+            address: {
+              "@type": "PostalAddress",
+              addressCountry: "IN"
+            }
+          })}
+        </script>
+      </Helmet>
+
       <BrowserRouter>
         <Header />
         <Routes>

@@ -4,6 +4,7 @@ import { Box, Ruler, Wrench, RefreshCw, Settings, ArrowRight, CheckCircle2 } fro
 import ProcessSection from "../components/ProcessSection";
 import CtaSection from "../components/CtaSection";
 import { IMAGES } from "../data/mock";
+import { Helmet } from 'react-helmet-async';
 
 const services = [
   {
@@ -66,6 +67,25 @@ const services = [
 const Services = () => {
   return (
     <main>
+
+    <Helmet>
+  <title>Wastewater Treatment Services | MBBR STP Solutions India</title>
+
+  <meta
+    name="description"
+    content="Explore Trek Enviro wastewater treatment services including STP installation, MBBR technology, AMC maintenance, water reuse, and custom sewage treatment solutions."
+  />
+
+  <meta
+    name="keywords"
+    content="wastewater treatment services, STP installation, sewage treatment services, MBBR technology India, FRP STP"
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://trekenviro.in/services" />
+</Helmet>
+
       <PageHero
         title="Advanced MBBR Wastewater Treatment Services"
         subtitle="Treat, Reuse, and Revive Water — compact, energy-efficient, and compliant decentralized STPs for homes, apartments, hotels, hospitals, schools, and industries across India."
