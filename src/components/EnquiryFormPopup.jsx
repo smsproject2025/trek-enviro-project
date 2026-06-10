@@ -114,7 +114,7 @@ const EnquiryFormPopup = () => {
           </DialogDescription>
         </DialogHeader>
 
-        {/* <form  action="https://formsubmit.co/trekenviro@gmail.com"  method="POST" className="space-y-4 mt-4">
+         <form  action="https://formsubmit.co/trekenviro@gmail.com"  method="POST" className="space-y-4 mt-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="name">Full Name *</Label>
@@ -202,10 +202,10 @@ const EnquiryFormPopup = () => {
               Maybe Later
             </Button>
           </div>
-        </form> */}
+        </form> 
 
 
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScTDiLiSgl7SIkkt-LnBtBqB6RMSbqC5rLFkD5iv_0riUoxFQ/viewform?embedded=true" width="400" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScTDiLiSgl7SIkkt-LnBtBqB6RMSbqC5rLFkD5iv_0riUoxFQ/viewform?embedded=true" width="400" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> */}
 
 
       </DialogContent>
